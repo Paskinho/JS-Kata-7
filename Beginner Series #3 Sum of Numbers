@@ -20,3 +20,22 @@ let max = Math.max(a, b),
   }
   return a === b ? a : summ;
 }
+
+
+
+
+Простое решение 
+function GetSum(a,b)
+{
+  return (Math.abs(a - b) + 1) * (a+b) / 2;
+}
+
+
+Решение, которое понятно мне
+
+function GetSum( a,b )
+{
+   if (a == b) return a;
+   else if (a < b) return a + GetSum(a+1, b);
+   else return a + GetSum(a-1,b);
+}
