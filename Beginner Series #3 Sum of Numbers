@@ -1,0 +1,22 @@
+function getSum( a,b )
+{
+if (a != b) {
+  return a + b
+}
+  else if (a = b) {
+    return a
+  }
+}
+
+Решение
+
+function getSum( a,b )
+{
+let max = Math.max(a, b),
+      current = Math.min(a, b),
+      summ = 0;
+  while (current <= max) {
+    summ += current++;
+  }
+  return a === b ? a : summ;
+}
