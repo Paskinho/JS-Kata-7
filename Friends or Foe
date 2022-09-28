@@ -1,0 +1,6 @@
+function friend(friends){
+  let myfriends = friends.filter(n => n.length === 4)
+  return myfriends
+}
+
+Фильтруем массив на наличие имён с количеством символов 4 (длиной слов = 4)
