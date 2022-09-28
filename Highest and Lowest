@@ -1,1 +1,24 @@
+function highAndLow(numbers){
+ let n = function num(a,b) {
+ a =  Math.max(numbers)
+ b =  Math.min(numbers)
+ if (a > b) {
+   return (a,b)
+ }
+ else if (a < b) {
+   return (b,a)
+ }
+  else return (a,b)
+   }
+}
 
+
+Верное решение:
+
+function highAndLow(numbers){
+let nums = numbers.split(" ");
+  return `${Math.max(...nums)} ${Math.min(...nums)}`;
+}
+
+Разбивает числа на массивы чисел
+Затем возвращает максимальное и минимальное значение данных массивов
