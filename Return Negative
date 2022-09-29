@@ -14,3 +14,13 @@ function makeNegative(num) {
 Но можно через логический ?
 function makeNegative(num) {
 let a = (num > 0) ? -num : (num = 0) ? return 0 : (num < 0) ? return num : 'error'
+
+
+Простейшее решение
+
+function makeNegative(num) {
+  return num > 0 ? -num : num
+}
+
+Была ошибка в том, что есть логическое равно нули, не надо.
+Для чисел только положительных возвращаем отрицательное значение этого числа
