@@ -1,0 +1,16 @@
+Мой код
+function makeNegative(num) {
+  if (num > 0) {
+    return -num
+  }
+  else if (num = 0) {
+    return 0
+  }
+  else if (num < 0 ) {
+    return num
+  }
+}
+
+Но можно через логический ?
+function makeNegative(num) {
+let a = (num > 0) ? -num : (num = 0) ? return 0 : (num < 0) ? return num : 'error'
