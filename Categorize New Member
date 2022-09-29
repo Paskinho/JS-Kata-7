@@ -1,0 +1,18 @@
+function openOrSenior(data){
+    let age
+    let handicap
+  if (age > 55, 22 => handicap => 7) {
+    return 'Senior'
+  }
+  else if (age < 55, -2 <= handicap < 7) {
+    return 'Open'
+  }
+}
+
+Решение на гите
+function openOrSenior(data){
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
+
+Здесь через .map
+Массив преобразуем в условие, возраст больше 54 и гандикап больше 7
