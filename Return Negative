@@ -1,4 +1,10 @@
 Мой код
+<!DOCTYPE HTML>
+<html>
+<body>
+<script> 
+ 'use strict'
+
 function makeNegative(num) {
   if (num > 0) {
     return -num
@@ -10,6 +16,11 @@ function makeNegative(num) {
     return num
   }
 }
+
+</script>
+
+</body>
+</html>
 
 Но можно через логический ?
 function makeNegative(num) {
