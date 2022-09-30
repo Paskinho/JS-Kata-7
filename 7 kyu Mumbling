@@ -1,6 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script> 
+ 'use strict'
+
 function accum(s) {
   return s.split("-")
 }
+
+</script>
+
+</body>
+</html>
 моё решение некорректное
 
 Верное решение
