@@ -1,10 +1,21 @@
 Моё решение 
-
+<!DOCTYPE HTML>
+<html>
+<body>
+<script> 
+ 'use strict'
+ 
+ 
 function addBinary(a,b) {
    let c = a +b 
    let d
    return d = parseInt(c,2)
 }
+
+</script>
+
+</body>
+</html>
 
 Верное решение
 
