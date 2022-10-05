@@ -1,6 +1,12 @@
 function longest(s1, s2) {
- if (s1 > s2) {
+ if (s1.length > s2.length) {
    return s1
+ }
+  else if (s2.lenght = 0) {
+    return s1
+ }
+   else if (s1.lenght = 0) {
+    return s2
  }
   else return s2
 }
