@@ -1,1 +1,22 @@
+моё решение 
+
+function solution(nums){
+ return (nums.isInteger) ? solution.sort ((a, b) => a - b): []
+}
+
+
+верное решение 
+
+function solution(nums){
+  return nums !== null ? nums.sort((a,b)=> a-b) : [] 
+}
+
+
+
+популярное решение
+
+
+function solution(nums){
+  return nums ? nums.sort(function(a, b) { return a - b;}) : [];
+}
 
