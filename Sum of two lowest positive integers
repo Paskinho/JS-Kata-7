@@ -1,1 +1,5 @@
+function sumTwoSmallestNumbers(numbers) {  
+ const c = numbers.sort((a, b)=>a - b);
+  return c[0] + c[1]
+}
 
