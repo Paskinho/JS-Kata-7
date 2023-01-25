@@ -1,0 +1,9 @@
+function removeUrlAnchor(url){
+  return url.replace(/#.*/,'')
+}
+
+Самое популярное решение
+
+function removeUrlAnchor(url){
+  return url.split('#')[0];
+}
