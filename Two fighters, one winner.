@@ -8,6 +8,13 @@ Each fighter will be a Fighter object/instance. See the Fighter class below in y
 Both health and damagePerAttack (damage_per_attack for python) will be integers larger than 0. You can mutate the Fighter objects.
 
 Your function also receives a third argument, a string, with the name of the fighter that attacks first.
+function Fighter(name, health, damagePerAttack) {
+        this.name = name;
+        this.health = health;
+        this.damagePerAttack = damagePerAttack;
+        this.toString = function() { return this.name; }
+}
+
 
 function declareWinner(fighter1, fighter2, firstAttacker) {
   return "Write your code here";
@@ -15,4 +22,13 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
 
 
 
-SOLUTION
+SOLUTION (not my, but correct)
+
+function declareWinner(fighter1, fighter2, firstAttacker) {
+  const f1 = Math.ceil(fighter1.health / fighter2.damagePerAttack) // devide health  of first fighter on damagePerAttack od second fighter
+  const f2 = Math.ceil(fighter2.health / fighter1.damagePerAttack)
+  return f1 < f2 ? fighter2.name : f2 < f1 ? fighter1.name : firstAttacker
+}
+
+
+
