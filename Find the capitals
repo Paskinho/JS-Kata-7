@@ -10,3 +10,11 @@ var capitals = function (word) {
 
 
 Solution:
+
+
+var capitals = function (word) {
+	let a = word.split('') // разбиваем строку на массив
+  let arr=[] // создаём пустой массив
+  for (let i=0;i<word.length;i++){if(a[i]===a[i].toUpperCase()){arr.push(i)}} // пробегаемся по длине массива. Если индекс i равен большому символу то добавляем в конец массива?
+  return arr
+};
