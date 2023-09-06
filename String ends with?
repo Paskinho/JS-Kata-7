@@ -8,3 +8,10 @@ solution('abc', 'd') // returns false
 function solution(str, ending){
   // TODO: complete
 }
+
+Solution 
+
+function solution(str, ending){
+ if (ending.length === 0) return true проверяем на пустую строку, если пустая , то возвращаем true, т.к. соответствует условию
+  return str.substr (-(ending.length)) === ending 
+}
