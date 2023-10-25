@@ -11,3 +11,10 @@ Note: for this kata y isn't considered a vowel.
 function disemvowel(str) {
   return str;
 }
+
+
+function disemvowel(str) {
+return str.replace(/[aeuio]/gi,'');
+}
+
+Change all vowels to empty string
