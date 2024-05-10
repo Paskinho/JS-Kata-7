@@ -17,3 +17,10 @@ ENJOY CODING :)
 function sumOfMinimums(arr) {
   // your code here
 }
+
+
+//SOLUTION 
+
+function sumOfMinimums(arr) {
+  return arr.reduce((total, subarray) => total + Math.min(...subarray), 0)
+}
